@@ -1,7 +1,7 @@
 {
-  "name": "ethereumjs-util",
-  "version": "6.0.0",
-  "description": "a collection of utility functions for Ethereum",
+  "name": "moacjs-util",
+  "version": "1.0.0",
+  "description": "a collection of utility functions for Moac",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -19,14 +19,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereumjs/ethereumjs-util.git"
+    "url": "https://github.com/wanpixiaozi/moacjs-util"
   },
   "keywords": [
-    "ethereum",
+    "Moac",
     "utilties"
   ],
-  "author": "mjbecze <mjbecze@gmail.com>",
+  "author": "caizhenglong <caizl2002@hotmail.com>",
   "contributors": [
+    {
+      "name": "mjbecze",
+      "email": "mjbecze@gmail.com"
+    },
     {
       "name": "Tim Coulter",
       "email": "tim@timothyjcoulter.com",
@@ -99,9 +103,9 @@
   ],
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/ethereumjs/ethereumjs-util/issues"
+    "url": "https://github.com/wanpixiaozi/moacjs-util/issues"
   },
-  "homepage": "https://github.com/ethereumjs/ethereumjs-util",
+  "homepage": "https://github.com/wanpixiaozi/moacjs-util",
   "dependencies": {
     "bn.js": "^4.11.0",
     "create-hash": "^1.1.2",
