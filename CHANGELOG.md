@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 (modification: no type change headlines) and this project adheres to 
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2018-11-16
+- Change to moac blockchain
 
 ## [6.0.0] - 2018-10-08
 - Support for ``EIP-155`` replay protection by adding an optional ``chainId`` parameter
