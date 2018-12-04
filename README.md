@@ -1,6 +1,6 @@
 # SYNOPSIS
-[![NPM Package](https://img.shields.io/npm/v/ethereumjs-util.svg?style=flat-square)](https://www.npmjs.org/package/moacjs-util)
-[![Build Status](https://img.shields.io/travis/ethereumjs/ethereumjs-util.svg?branch=master&style=flat-square)](https://travis-ci.org/wanpixiaozi/moacjs-util.svg?branch=master)
+[![NPM Package](https://img.shields.io/badge/npm-v1.0.1-blue.svg)](https://www.npmjs.org/package/moacjs-util)
+[![Build Status](https://travis-ci.org/wanpixiaozi/moacjs-util.svg?branch=master)](https://travis-ci.org/ethereumjs/ethereumjs-util)
 [![Coverage Status](https://coveralls.io/repos/github/wanpixiaozi/moacjs-util/badge.svg?branch=master)](https://coveralls.io/github/wanpixiaozi/moacjs-util?branch=master)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)  
