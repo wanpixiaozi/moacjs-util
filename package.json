@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "coverage": "npm run build:dist && istanbul cover _mocha",
+    "coverage": "npm run build:dist && istanbul cover node_modules/mocha/bin/_mocha",
     "coveralls": "npm run coverage && coveralls < coverage/lcov.info",
     "lint": "standard",
     "prepublishOnly": "npm run test && npm run build:dist",
