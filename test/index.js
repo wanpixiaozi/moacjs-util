@@ -486,9 +486,9 @@ describe('ecsign', function () {
 
   it('should produce a signature for testnet', function () {
     const sig = moacUtils.ecsign(echash, ecprivkey, chainId)
-    //console.log(Buffer(sig.r,"hex").toString())
-    //console.log(moacUtils.bufferToHex(sig.r))
-    //console.log(moacUtils.bufferToHex(sig.s))
+    // console.log(Buffer(sig.r,"hex").toString())
+    // console.log(moacUtils.bufferToHex(sig.r))
+    // console.log(moacUtils.bufferToHex(sig.s))
 
     assert.deepEqual(sig.r, Buffer.from('99e71a99cb2270b8cac5254f9e99b6210c6c10224a1579cf389ef88b20a1abe9', 'hex'))
     assert.deepEqual(sig.s, Buffer.from('129ff05af364204442bdb53ab6f18a99ab48acc9326fa689f228040429e3ca66', 'hex'))
