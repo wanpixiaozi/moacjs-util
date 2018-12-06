@@ -52,7 +52,7 @@ describe('define', function () {
     })
   })
 
-  it('it should accept rlp encoded intial data', function () {
+  it('it should accept rlp encoded initial data', function () {
     var someOb = {}
     var data = {
       aword: 'test',
@@ -79,14 +79,14 @@ describe('define', function () {
     var someOb2 = {}
     var rlpEncoded = someOb.serialize().toString('hex')
     ethUtil.defineProperties(someOb2, fields, rlpEncoded)
-    assert.equal(someOb2.serialize().toString('hex'), rlpEncoded, 'the constuctor should accept rlp encoded buffers')
+    assert.equal(someOb2.serialize().toString('hex'), rlpEncoded, 'the constructor should accept rlp encoded buffers')
 
     var someOb3 = {}
     ethUtil.defineProperties(someOb3, fields, expectedArray)
     assert.deepEqual(someOb.toJSON(), expectedArray, 'should produce the correctly object')
   })
 
-  it('it should not accept invalid values in the constuctor', function () {
+  it('it should not accept invalid values in the constructor', function () {
     var someOb = {}
     assert.throws(function () {
       ethUtil.defineProperties(someOb, fields, 5)
