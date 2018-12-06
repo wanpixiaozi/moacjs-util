@@ -537,7 +537,8 @@ describe('ecrecover', function () {
 describe('hashPersonalMessage', function () {
   it('should produce a deterministic hash', function () {
     const h = moacUtils.hashPersonalMessage(Buffer.from('Hello world'))
-    assert.deepEqual(h, Buffer.from('8144a6fa26be252b86456491fbcd43c1de7e022241845ffea1c3df066f7cfede', 'hex'))
+    console.log(moacUtils.bufferToHex(h))
+    assert.deepEqual(h, Buffer.from('ecc248d33efb753bbe517865fbd4486ee97503daac71a872f0855eab92be1b0d', 'hex'))
   })
 })
 
