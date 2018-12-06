@@ -282,7 +282,7 @@ exports.isValidPrivate = function (privateKey) {
 
 /**
  * Checks if the public key satisfies the rules of the curve secp256k1
- * and the requirements of Ethereum.
+ * and the requirements of Moac.
  * @param {Buffer} publicKey The two points of an uncompressed key, unless sanitize is enabled
  * @param {Boolean} [sanitize=false] Accept public keys in other formats
  * @return {Boolean}
@@ -301,8 +301,8 @@ exports.isValidPublic = function (publicKey, sanitize) {
 }
 
 /**
- * Returns the ethereum address of a given public key.
- * Accepts "Ethereum public keys" and SEC1 encoded keys.
+ * Returns the Moac address of a given public key.
+ * Accepts "Moac public keys" and SEC1 encoded keys.
  * @param {Buffer} pubKey The two points of an uncompressed key, unless sanitize is enabled
  * @param {Boolean} [sanitize=false] Accept public keys in other formats
  * @return {Buffer}
@@ -318,7 +318,7 @@ exports.pubToAddress = exports.publicToAddress = function (pubKey, sanitize) {
 }
 
 /**
- * Returns the ethereum public key of a given private key
+ * Returns the Moac public key of a given private key
  * @param {Buffer} privateKey A private key must be 256 bits wide
  * @return {Buffer}
  */
@@ -329,7 +329,7 @@ const privateToPublic = exports.privateToPublic = function (privateKey) {
 }
 
 /**
- * Converts a public key to the Ethereum format.
+ * Converts a public key to the Moac format.
  * @param {Buffer} publicKey
  * @return {Buffer}
  */
@@ -367,7 +367,7 @@ exports.ecsign = function (msgHash, privateKey, chainId) {
  * @returns {Buffer} hash
  */
 exports.hashPersonalMessage = function (message) {
-  const prefix = exports.toBuffer('\u0019Ethereum Signed Message:\n' + message.length.toString())
+  const prefix = exports.toBuffer('\u0019Moac Signed Message:\n' + message.length.toString())
   return exports.keccak(Buffer.concat([prefix, message]))
 }
 
@@ -440,7 +440,7 @@ exports.fromRpcSig = function (sig) {
 }
 
 /**
- * Returns the ethereum address of a given private key
+ * Returns the Moac address of a given private key
  * @param {Buffer} privateKey A private key must be 256 bits wide
  * @return {Buffer}
  */
@@ -469,7 +469,7 @@ exports.isZeroAddress = function (address) {
 }
 
 /**
- * Returns a checksummed address
+ * Returns a checksumed address
  * @param {String} address
  * @return {String}
  */
