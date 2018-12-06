@@ -598,7 +598,7 @@ exports.isValidSignature = function (v, r, s, homestead, chainId) {
     return false
   }
 
-  if ((homestead === false) && (new BN(s).cmp(SECP256K1_N_DIV_2) === 1)) {
+  if (!homestead && (new BN(s).cmp(SECP256K1_N_DIV_2) === 1)) {
     return false
   }
 
@@ -696,7 +696,7 @@ exports.defineProperties = function (self, fields, data) {
     }
   })
 
-  // if the constuctor is passed data
+  // if the constructor is passed data
   if (data) {
     if (typeof data === 'string') {
       data = Buffer.from(exports.stripHexPrefix(data), 'hex')
