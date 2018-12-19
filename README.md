@@ -1,5 +1,5 @@
 # SYNOPSIS
-[![NPM Package](https://img.shields.io/badge/npm-v1.0.1-blue.svg)](https://www.npmjs.org/package/moacjs-util)
+[![NPM Package](https://img.shields.io/badge/npm-v1.0.3-blue.svg)](https://www.npmjs.org/package/moacjs-util)
 [![Build Status](https://travis-ci.org/wanpixiaozi/moacjs-util.svg?branch=master)](https://travis-ci.org/wanpixiaozi/moacjs-util#)
 [![Coverage Status](https://coveralls.io/repos/github/wanpixiaozi/moacjs-util/badge.svg?branch=master)](https://coveralls.io/github/wanpixiaozi/moacjs-util?branch=master)
 
