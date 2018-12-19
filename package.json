@@ -1,6 +1,6 @@
 {
   "name": "moacjs-util",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a collection of utility functions for Moac",
   "main": "dist/index.js",
   "files": [
@@ -15,7 +15,7 @@
     "test:browser": "npm run build:dist && karma start karma.conf.js",
     "test:node": "npm run build:dist && istanbul test node_modules/mocha/bin/mocha -- --reporter spec",
     "build:dist": "babel index.js --source-root ./ -d ./dist",
-    "build:docs": "documentation build ./index.js --github --sort-order='alpha' -f md > ./docs/index.md"
+    "build:docs": "documentation build ./index.js --github --sort-order=alpha -f md > ./docs/index.md"
   },
   "repository": {
     "type": "git",
