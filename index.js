@@ -62,7 +62,6 @@ exports.KECCAK256_RLP = Buffer.from(exports.KECCAK256_RLP_S, 'hex')
 exports.BN = BN
 
 /**
- * [`rlp`](https://github.com/ethereumjs/rlp)
  * @var {Function}
  */
 exports.rlp = rlp
@@ -414,7 +413,6 @@ exports.toRpcSig = function (v, r, s, chainId) {
 
 /**
  * Convert signature format of the `eth_sign` RPC method to signature parameters
- * NOTE: all because of a bug in geth: https://github.com/ethereum/go-ethereum/issues/2053
  * @param {String} sig
  * @return {Object}
  */
